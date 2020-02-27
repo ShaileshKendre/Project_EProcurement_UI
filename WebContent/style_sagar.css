@@ -1,0 +1,41 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  background-image: url("bg1_sagar.jpg");
+
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button {
+	margin: auto;
+	color: Yellow;
+	background: #408080;
+	top: 25%;
+	align-content: Center;
+}
+
+.head1 {
+	margin: auto;
+	color: Orange;
+	font-weight: 600;
+	color: Orange;
+}
+
+table, th, td {
+	margin: auto;
+	border: 2px solid #ff00ff;
+	background: #80ff80;
+}
+
+.caption {
+	color: Orange;
+	font-weight: 600;
+}
+::placeholder { 
+  color: #c0c0c0;
+  opacity: 1; 
