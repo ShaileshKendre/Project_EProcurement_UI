@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>All Suppliers</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+$("#btn").click(function(){
+
+$.get("http://localhost:8080/e/getallsupplier",function(data,status){
+console.log(data);
+var data=data;
+data.forEach(function(dt){
+	                  
+$("#tdata").append("<tr>"+
+
+		"<td>"+dt.id+"</td>"+
+        "<td>"+dt.name+"</td>"+
+        "<td>"+dt.phone+"</td>"+
+        "<td>"+dt.email+"</td>"+
+
+"</tr>"
+);
+});
+});
+});
+});
+</script>
+
+   </head>
+
+<body bgcolor="silver">
+
+<button class ="btn btn-primary" id="btn"> GET ALL SUPPLIER</button>
+
+<table class="table table-bordered"> 
+<thead>
+<tr>
+<th> ID</th>
+<th> NAME</th>
+<th> PHONE</th>
+<th> EMAIL</th>
+</tr>
+</thead>
+<tbody id="tdata">
+
+</tbody>
+
+ </table>
+</body>
+<br> <br> <a href="index_shashi.jsp">Back To Home Page</a>
+</html>
