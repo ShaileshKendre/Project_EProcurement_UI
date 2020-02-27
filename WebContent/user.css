@@ -1,0 +1,55 @@
+ 
+header{
+	
+	 border: 5px solid;
+	 border-color: maroon;
+	background-color: black;
+
+	width: 1000px;
+	margin: auto;
+}
+
+ h1 {
+	color: #ed5f62;
+} 
+
+h2 {
+	color: #ed5f62;
+} 
+
+body {
+	background-color: #c0c0c0;
+	color: solid;
+
+
+}
+
+footer{
+	color: #ed5f62;
+	background-color:black;
+	
+	width: 1000px;
+	margin: auto;
+
+
+
+}
+
+.container{
+	width: 1000px;
+	margin: auto;
+color: white;
+}
+
+
+a{
+	color: #ed5f62;
+}
+
+b{
+	color: #ffc082;
+}
+
+showinfo{
+	margin: auto;
+}

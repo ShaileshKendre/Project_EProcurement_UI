@@ -1,0 +1,58 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+$("#btn").click(function(){
+
+$.get("http://localhost:8080/api/truckList",function(data,status){
+
+console.log(data);
+var data=data;
+data.forEach(function(dt){
+
+$("#tdata").append("<tr>"+"<td>"+dt.id+"</td>"+
+"<td>"+dt.truck_No+"</td>"+"<td>"+dt.truck_Name+"</td>"+"<td>"+dt.truck_Company+"</td>"+"<td>"+dt.truck_Owner+"</td>"+"<td>"+dt.driverMoNo+"</td>"+"</tr>"
+);
+});
+});
+});
+});
+</script>
+
+   </head>
+
+<body style="background-color:LightGray; >
+<h1 style="font-size:60px;"><h1><center>Truck List...!!!</center></h1>
+<button class ="btn btn-primary" id="btn" > GET</button>
+
+
+
+<table class="table table-bordered"> 
+<thead>
+<tr><b>
+<th>Truck_Id</th>
+					<th>Truck_No </th>
+					<th>Truck_Name</th>
+					<th>Truck_Company</th>
+					<th>Truck_Owner</th>
+					<th>Driver_Mo_No</th>
+<th></th>
+</b>
+</tr>
+</thead>
+<tbody id="tdata">
+
+</tbody>
+
+ </table>
+
+ <a href="index.html">Back</a>
+</body>
+
+</html>
