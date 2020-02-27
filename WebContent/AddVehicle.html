@@ -1,32 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <script type="text/javascript"
 	 src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	
-</script>
-<script>
-	$(document).ready(
-			function() {
 
-				$("#btn").click(
-						function() {
-							var veh = $("#vehicle").val();
-							var wt = $("#weight").val();
-
-							$.post("http://localhost:8090/vehicle/addvehicle/"
-									+ veh + "/" + wt, function(data, status) {
-
-								console.log(data);
-								var data = data;
-								alert(data);
-
-							});
-						});
-			});
-</script>
+<script type="text/javascript" src="addvehicle.js"></script>
 <meta charset="ISO-8859-1">
 <title>Vehicle Loader</title>
 
@@ -57,7 +37,7 @@
 		 <br>
 		 <br>
 		 <br>
-		  <a href="index.jsp">Back To Home</a>
+		  <a href="indexShailesh.jsp">Back To Home</a>
 
 	</div>
 

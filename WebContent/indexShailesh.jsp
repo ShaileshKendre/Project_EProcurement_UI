@@ -13,7 +13,7 @@
 <h2 style="color:red;";font-family: verdana" > Welcome to <mark>E-Procurement</mark> portal...!!!!</h2>
 <br>
 <br>
-	<a style="color:black" href="Dashboard.jsp"><b> Dashboard</b></a>&nbsp;&nbsp;<a style="color:black" href="AddVehicle.jsp"> <b> Register Vehicle</b></a>
+	<a style="color:black" href="Dashboard.html"><b> Dashboard</b></a>&nbsp;&nbsp;<a style="color:black" href="AddVehicle.html"> <b> Register Vehicle</b></a>
 </div>
 </body>
 </html>
